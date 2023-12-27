@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <style>
+        .active {
+            background-color: #333;
+            color: white;
+        }
+        </style>
+        <label for="input1">Input 1:</label>
+        <input
+          type="number"
+          id="input1"
+          name="input1"
+          placeholder="Enter the first number"
+        />
+        <br />
+        <br />
+  
+        <label for="input2">Input 2:</label>
+        <input
+          type="number"
+          id="input2"
+          name="input2"
+          placeholder="Enter the second number"
+        />
+        <p>
+          Please select an operator:
+        </p>
+        <button id="add" onclick="addition()">+</button>
+        <button id="subtract" onclick="subtraction()">-</button>
+        <button id="multiply" onclick="multiplication()">×</button>
+        <button id="divide" onclick="division()">÷</button>
+  
+        <p>Result: <div id="result"></div></p>
+  
+        <button type="button" onclick="calculate()">Calculate</button>
+        <br />
+        <br />
+        <button type="button" onclick="reset()">Reset</button>
+  </body>
+</html>
